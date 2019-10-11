@@ -134,7 +134,7 @@ interview screening questions (a form you fill when applying for a job):
   what is a situation where it is not appropriate?
 - What is "NewSQL", and what is it trying to achieve?
 
-[Please visit](https://www.vishnuyar.com/2019-10-02-sprint3-answers/)
+### For Answers [visit](https://www.vishnuyar.com/2019-10-02-sprint3-answers/)
 
 ### Part 5 - Turn it in!
 Add all the files you wrote (`demo_data.py`, `northwind.py`), as well as this
