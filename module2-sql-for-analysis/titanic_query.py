@@ -10,11 +10,12 @@ pg_connect = psycopg2.connect(dbname=dbname, user=username,
                                 password=pass_word, host=host)
 cur = pg_connect.cursor()
 #Query for Survived people by class
-query = 'SELECT COUNT("Pclass") FROM titanic WHERE "Survived"=1 GROUP BY "Pclass";'
+query = 'SELECT survived,pclass, COUNT(pclass) FROM titanic  \
+        GROUP BY (pclass,survived) order by survived asc ,pclass asc;'
 try:
     cur.execute(query)
     for row in cur:
-        print(row[0])
+        print(row)
 except :
     pass
 
